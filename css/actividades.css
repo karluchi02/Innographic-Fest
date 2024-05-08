@@ -1,0 +1,494 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+	overflow-x: hidden;
+	font-family: "articulat-cf", sans-serif;
+	background-color: #F9F5F5;
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+/*		01 ENCABEZADO -----------------------------------*/
+
+header {
+	width: 100%;
+	height: 10%;
+	display: flex;
+	position: fixed;
+	z-index: 1;
+	background-color: rgba(249, 245, 245, 0.4);
+	backdrop-filter: blur(10px);
+}
+
+/*		caja izquierda ----*/
+
+#logotipo {
+	width: 50%;
+	height: auto;
+	padding: 0% 0% 0% 5%;
+	display: flex;
+	align-items: center;
+}
+
+#logotipo img{
+	width: 8rem;
+}
+
+/*		caja derecha -------*/
+
+nav {
+	width: 50%;
+	display: flex;
+	height: auto;	
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#menu {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: row;
+	list-style: none;
+	color: #333333;
+}
+
+.linksmenu {
+	width: auto;
+	margin: 0% 10% 0% 10%;
+	font-size: 1.2rem;
+	font-weight: 200;
+	color: #333333;
+}
+
+.linksmenu a {
+	width: auto;
+	text-decoration: none;
+	color: #333333;
+}
+
+.linksmenu a:hover{
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+}
+
+#linksmenutickets {
+	width: auto;
+	display: flex;
+	align-items: center;
+	margin: 0% 10% 0% 10%;
+	color: #333333;
+	padding: 10px 30px; 
+    border: 1px solid #333333; 
+    border-radius: 20px;
+    background-color: transparent;
+	transition: all 0.2s ease;
+}
+
+#linksmenutickets p{
+	font-size: 1.2rem;
+	font-weight: 200
+}
+
+#linksmenutickets:hover {
+    background-color: #FAFF00;
+}
+
+#linksmenutickets a {
+	text-decoration: none;
+	color: #333333;
+}
+
+
+
+
+/*		02 MAIN -------------------------------------*/
+
+.curva3 {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 4%;
+	z-index: -1;
+}
+
+h1 {
+	font-family: articulat-cf, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 3rem;
+	color: #333333;
+	text-align: center;
+	padding-top: 10%;
+}
+
+
+
+
+/*		03 ACTIVIDADES ------------------------------*/
+
+.contenedor {
+ 	display: flex;
+ 	flex-wrap: wrap;
+  	width: 100vw;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0% 10% 0% 10%;
+}
+
+.tarjeta {
+  	margin: 45px 40px 20px 40px;
+  	position: relative;
+  	overflow: hidden;
+}
+
+.tarjeta-con-titulo {
+  	width: calc(50% - 20px);
+  	margin: 10px;
+  	position: relative;
+  	overflow: hidden;
+}
+
+.tarjeta img {
+  	width: 100%;
+  	display: block;
+  	transition: transform 0.3s ease;
+  	border-radius: 10px;
+}
+
+.texto {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #FAFF00;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	padding: 8% 20% 8% 8%;
+	font-size: 1.5rem;
+	font-weight: 200;
+	line-height: 1.1;
+	border-radius: 10px;
+}
+
+.tarjeta:hover .texto {
+  	opacity: 1;
+}
+
+
+h2 {
+	font-family: articulat-cf, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 2rem;
+    color: #333333;
+    text-align: center;
+    padding: 0% 4% 0% 20px;
+}
+
+.alinearicono4{
+	display: flex;
+	justify-content: center;
+}
+
+.flecha {
+	width: 20px;
+	height: auto;
+	display: inline-flex;
+}
+
+.contenedorpatata2 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.patata2 {
+	display: flex;
+	justify-content: center;
+	width: 427px;
+}
+
+
+
+/*		04 _ FOOTER ------------------------------------*/
+
+footer {
+	background-color: white;
+	display: flex;
+	width: 100%;
+	height: auto;
+	flex-wrap: wrap;
+}
+
+.curva2 {
+	width: 10%;
+	height: auto;
+}
+
+#enlaces {
+	display: flex;
+	width: 30%;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	flex-direction: column;
+	list-style: none;
+	color: #333333;
+	font-size: 2.3rem;
+	font-weight: 200;
+	padding: 30px 0px 80px 100px;
+	line-height: 1.4;
+}
+
+#enlaces a {
+	width: auto;
+	text-decoration: none;
+	color: #333333;
+}
+
+#enlaces a:hover{
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+}
+
+#info {
+	display: flex;
+	width: 54%;
+	align-items: flex-end;
+	justify-content: space-evenly;
+	flex-direction: column;
+	list-style: none;
+	color: #333333;
+	font-size: 1.4rem;
+	font-weight: 200;
+	padding: 30px 0px 80px 10px;
+	line-height: 1.3;
+}
+
+#info img{
+	width: 20px;
+}
+
+.alinearicono3 {
+	display: inline-flex;
+}
+
+.alinearicono3 p{
+	padding-right: 30px;
+	text-align: right;
+}
+
+.redes {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.redes img {
+  	width: 55px;
+  	transition: transform 0.15s ease;
+}
+
+.redes img:hover {
+  	transform: scale(1.3);
+}
+
+.redes li{
+	padding: 0px 20px 0px 20px;
+}
+
+.derechos {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 1rem;
+	font-weight: 200;
+	padding: 20px 0px 40px 0px;
+}
+
+
+
+
+
+
+/*		07 MEDIAQUERIE ------------------------------------*/
+
+@media screen and (max-width: 880px) {
+	
+
+
+	/*		01 _ ENCABEZADO ----------------------*/
+
+	header {
+		flex-direction: column;
+		padding-top: 5%;
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+
+
+/*		caja izquierda --------*/
+
+	#logotipo {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding: 0% 0% 2% 0%;
+	}
+
+	#logotipo img {
+		height: auto;
+	}
+
+
+/*		caja derecha ----------*/
+
+	nav {
+		width: 100%;
+	}
+
+	#menu {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.linksmenu a {
+		font-size: 1.3rem;
+		line-height: 4rem;
+		padding-bottom: 0%;
+	}
+
+	#linksmenutickets {
+		width: auto;
+		margin-top: 2%;
+		margin-bottom: 6%;
+}
+
+
+/*		02 _ MAIN -----------------------------*/
+
+	.curva3 {
+		display: none;
+	}
+
+	h1 {
+		font-size: 2rem;
+		padding: 6% 6% 2% 6%;;
+	}
+
+
+/*		03 _ ACTIVIDADES ---------------------*/
+
+	.contenedor {
+	    flex-direction: column;
+	    padding: 0% 12% 0% 10%;
+	}
+
+	.tarjeta-con-titulo {
+	  	width: 100%;
+	  	margin: 0;
+	}
+
+	.texto {
+	  	font-size: 0.9rem;
+	}
+
+	h2 {
+	    font-size: 1.6rem;
+	    padding: 0% 4% 0% 15px;
+	}
+
+	.flecha {
+		width: 15px;
+	}
+
+	.patata2 {
+		width: 300px;
+	}
+
+
+
+
+
+/*		04 _ FOOTER ---------------------------*/
+
+	.curva2 {
+		height: auto;
+	}
+
+	#enlaces {
+		justify-content: space-evenly;
+		font-size: 1.4rem;
+		padding: 20px 0px 10px 10px;
+	}
+
+	#info {
+		width: 54%;
+		justify-content: space-evenly;
+		font-size: 0.9rem;
+		padding: 30px 0px 20px 10px;
+		line-height: 1.3;
+	}
+
+	#info img{
+		width: 12px;
+	}
+
+	#info li{
+		padding: 10px;
+	}
+
+	.alinearicono3 p{
+		padding-right: 15px;
+		text-align: right;
+	}
+
+	.redes {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.redes img {
+	  	width: 30px;
+	  	transition: transform 0.15s ease;
+	}
+
+	.redes img:hover {
+	  	transform: scale(1.3);
+	}
+
+	.redes li{
+		padding: 0px 10px 0px 10px;
+	}
+
+	.derechos {
+		width: 100%;
+		justify-content: center;
+		font-size: 0.8rem;
+		padding: 20px 0px 40px 0px;
+		text-align: center;
+	}
+
+}
+
+
+
